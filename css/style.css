@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+
+    --colorAzulClaro:#82bfff;
+    --colorAzulOcuro:rgb(51, 139, 255);
+    --colorMasOcur:rgb(0, 53, 123);
+}
+
+body{
+
+    
+    background:linear-gradient(#82bfff,rgb(51, 139, 255)) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: auto;
+    width: 100%;
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.contenedor_menu{
+
+    padding: 15px;
+    margin-top:10px ;
+    background-attachment: fixed;
+    
+}
+
+.menu{
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+
+    list-style: none;
+}
+
+.menu li a{
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 139, 255);
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 15px;
+    text-transform: uppercase;
+
+}
+
+.menu li:hover .menu_vertical{
+
+    display: block;
+
+}
+
+.menu_vertical{
+
+    position: absolute;
+    display: none;
+    list-style: none;
+    margin-top: 14px ;
+    width: 125px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.289);
+    border-radius: 10px;
+
+}
+
+.menu_vertical li{
+
+    padding: 8px 5px;
+    font-size: 12px;
+  
+    
+}
+
+.menu_vertical li a{
+
+    background-color: transparent;
+
+}
+
+.menu_vertical li a:hover{
+
+    color: var(--colorAzulClaro);
+}
+
+
+
+.tituloPaquetes{
+      
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 35%;
+    margin-top: 50px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    background-color: rgb(89, 175, 255);
+    padding: 10px;
+    
+}
+
+.tituloPaquetes:hover{
+    transition: 0.5s;
+    background-color: rgb(51, 139, 255);
+}
+
+.contenedorFlip{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    
+}
+
+.card{
+
+    position: relative;
+    width: 250px ;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face{
+
+    position: absolute;
+    width: 100% ;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+.card .front{
+
+    transform: perspective(600px) rotateX(0deg);
+    box-shadow: 0 5px 10px black;
+    transition: 1s;
+}
+
+.card .front img{
+
+    position: absolute;
+    width: 100% ;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.card .front h3{
+
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .4);
+    text-transform: uppercase;
+    height: 45px;
+    bottom: 0;
+    position: absolute;
+    line-height: 45px;
+    color: white;
+}
+
+.card .back{
+
+    transform: perspective(600px) rotateX(180deg);
+    background: rgb(0, 53, 123);
+    padding: 15px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px black;
+    transition: 1s;
+}
+
+.card .back h3{
+
+    font-size: 30px;
+    margin-top: 20px;
+
+    letter-spacing: 2px;
+}
+
+.card .back p{
+
+    letter-spacing: 2px;
+}
+
+.card:hover .front{
+
+    transform: perspective(600px) rotateX(180deg);
+    transition: 1s;
+}
+
+.card:hover .back{
+
+    transform: perspective(600px) rotateX(360deg);
+    transition: 1s;
+}
+
+
+
+@media all and (max-width:345px){
+
+
+    .menu li a{
+
+        color: rgb(255, 255, 255);
+        background-color: rgb(51, 139, 255);
+        border-radius: 15px;
+        font-size: 11px;
+        margin: 0 2px;
+        text-decoration: none;
+        padding: 5px;
+        text-transform: uppercase;
+        transition: 1s;
+    
+    }
+
+    .tituloPaquetes{
+      
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 5%;
+        margin-top: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        transition: 0.5s;
+        color: white;
+        text-shadow: 2px 2px 10px black;
+        background-color: rgb(89, 175, 255);
+        padding: 8px;
+        
+    }
+
+    .card{
+
+        position: relative;
+        width: 150px ;
+        height: 250px;
+        margin: 20px;
+    }
+    
+
+}
