@@ -209,9 +209,145 @@ html{
 
 .ActividadesFondo{
 
-    height: 600px;
+    height: 650px;
     display: grid;
     background-color: white;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    ". tituloActividades tituloActividades . "
+    "actividadesMendoza actividadesJujuy actividadesBariloche actividadesMisiones"
+    "actividadesMendoza actividadesJujuy actividadesBariloche actividadesMisiones";
+    
+}
+
+
+.tituloActividades{
+
+    grid-area:tituloActividades;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    color: black;
+    text-shadow: 2px 2px 5px gray;
+    padding: 10px;
+}
+
+.actividadesMendoza{
+
+    grid-area: actividadesMendoza;
+    margin-top: -100px;
+
+}
+
+.imagenesMendoza {
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.textoMendoza{
+
+    text-align: center;
+    padding: 5px;
+}
+
+.imagenesMendoza img{
+
+   width: 100%;
+   height: 230px;
+   border-radius: 5px;
+   overflow: hidden; 
+
+}
+
+
+
+.actividadesJujuy{
+
+    grid-area: actividadesJujuy;
+    margin-top: -90px;
+}
+
+.imagenesJujuy {
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.textoJujuy{
+
+    text-align: center;
+    padding: 5px;
+}
+
+.imagenesJujuy img{
+
+   width: 100%;
+   height: 230px;
+   border-radius: 5px;
+   overflow: hidden; 
+
+}
+
+
+
+.actividadesBariloche{
+
+    grid-area: actividadesBariloche;
+    margin-top: -100px;
+}
+
+.imagenesBariloche {
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.textoBariloche{
+
+    text-align: center;
+    padding: 5px;
+}
+
+.imagenesBariloche img{
+
+   width: 100%;
+   border-radius: 5px;
+   height: 230px;
+   overflow: hidden; 
+
+}
+
+
+
+.actividadesMisiones{
+    
+    grid-area: actividadesMisiones;
+    margin-top: -90px;
+}
+
+.imagenesMisiones {
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.textoMisiones{
+
+    text-align: center;
+    padding: 5px;
+}
+
+.imagenesMisiones img{
+
+   width: 100%;
+   height: 230px;
+   border-radius: 5px;
+   overflow: hidden; 
+
 }
 
 
