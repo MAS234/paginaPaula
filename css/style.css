@@ -742,6 +742,7 @@ html{
 .elemento label{
 
     font-size: 15px;
+
 }
 
 .elemento input{
@@ -757,6 +758,50 @@ html{
     
 }
 
+.elemento input[type="text"]{
+
+    transition: 0.5s;
+}
+
+.elemento input[type="text"]:hover{
+
+    transition: 0.5s;
+    padding: 4px;
+}
+
+.elemento input[type="email"]{
+
+    transition: 0.5s;
+}
+
+.elemento input[type="email"]:hover{
+
+    transition: 0.5s;
+    padding: 4px;
+}
+
+.elemento input[type="password"]{
+
+    transition: 0.5s;
+}
+
+.elemento input[type="password"]:hover{
+
+    transition: 0.5s;
+    padding: 4px;
+}
+
+.elemento input[type="tel"]{
+
+    transition: 0.5s;
+}
+
+.elemento input[type="tel"]:hover{
+
+    transition: 0.5s;
+    padding: 4px;
+}
+
 .elemento input[type="submit"]{
 
     padding: 15px;
@@ -770,6 +815,7 @@ html{
     background-color: black;
     color: white;
     transition: 0.4s;
+    
 }
 
 .imagenContacto{
