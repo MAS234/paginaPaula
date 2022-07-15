@@ -1,3 +1,3 @@
-# paginaPaula
+# paginaViajes
 
- https://mas234.github.io/paginaPaula/
+ https://mas234.github.io/paginaViajes/
