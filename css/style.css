@@ -206,15 +206,6 @@ html{
     transition: 1s;
 }
 
-
-
-
-
-
-
-
-
-
 .ActividadesFondo{
 
     height: 700px;
@@ -358,8 +349,6 @@ html{
    overflow: hidden; 
 
 }
-
-
 
 .contenedorFlip2{
 
@@ -675,9 +664,6 @@ html{
         );
     }
 }
-
-
-
 
 .contenedorContacto{
 
@@ -1013,7 +999,7 @@ html{
 
 #link:hover{
 
-    color: blue;
+    color: rgb(53, 124, 186);
 }
 
 #mail:hover{
