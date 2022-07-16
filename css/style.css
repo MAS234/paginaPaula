@@ -472,9 +472,8 @@ html{
     text-align: center;
     text-transform: uppercase;
     font-size: 30px;
-    margin: 50px 35%;
-    background-color: white;
-    color: black;
+    margin: 50px;
+    color: white;
     border-radius: 5px ;
     padding: 5px;
 }
@@ -497,20 +496,6 @@ html{
     color: white;
     font-size: 24px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -639,6 +624,7 @@ html{
 .tituloPromocion h2{
 
     position: absolute;
+    text-align: center;
     font-size: 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -838,9 +824,231 @@ html{
     width: 100%;
     height: 100%;
    
+}
+
+
+
+.fondoPaquetes{
+    height: 1700px;
+    
+}
+
+.paquetestitulo{
+    font-size: 30px;
+    color: beige;
+    margin: 20px 85px;
+}
+
+.linea {
+    width: 90%;
+    margin: 10px 85px;
+}
+
+.elemento2 input{
+   
+    margin-top: 25px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--colorAzulClaro);
+}
+
+.elemento2:hover input{
+   
+    margin-top: 25px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--colorAzulOcuro);
+}
+
+.contenedorPaquetes{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
+.tarjeta{
+
+    position: relative;
+    width: 300px ;
+    height: 280px;
+    margin: 20px;
+   
+}
+
+.tarjeta .cara{
+
+    
+    position: absolute;
+    width: 100% ;
+    height: 100%;
+    
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+.tarjeta .frente{
+
+   
+    box-shadow: 0 5px 10px black;
+   
+}
+
+.tarjeta .frente img{
+
+    overflow: cover;
+    width: 100%;
+   height: 100%;
+    object-fit:cover;
+ 
+
+}
+.tarjeta .frente h3{
+
+    width: 100%;
+    text-align: center;
+    background-color:#0a1559db;
+    text-transform: uppercase;
+    height: 45px;
+    bottom: 0;
+    
+    position: absolute;
+    line-height: 45px;
+    color: white;
+}
+
+.tarjeta .atras{
+
+   
+    background: #0a1559ee;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    width: 280px;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px black;
+    height: 260px;
+    display: none;
+    
+}
+
+.tarjeta .atras h3{
+
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom:10px ;
+
+    letter-spacing: 2px;
+}
+
+.tarjeta .atras p{
+
+    letter-spacing: 2px;
+}
+
+
+.tarjeta:hover .atras{
+
+   
+    display: block;
+}
+
+.tituloPaquetesCompra{
+
+    text-align: center;
+    color: white;
+    margin: 50px;
+}
+
+.contenedorFinal{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-areas:
+    "creadores redesSociales";
+    background-color: var(--colorMasOcur);
+}
+
+.creadores {
+
+    grid-area: creadores ;
+    text-align: center;
+    margin-left: -100px;
+    margin-top: 30px;
+    height: 100px;
+    color: white;
+}
+
+.redesSociales{
+
+    grid-area: redesSociales;
+    text-align: center;
+    color: white;
+}
+
+.iconosFinal{
+
+    display: flex;
+}
+
+.iconosFinal i{
+
+    color: white;
+    font-size: 25px;
+    margin: 20px 10%;
+    cursor: pointer;
+}
+
+#face:hover{
+    color: rgb(67, 135, 253);
+}
+
+
+#link:hover{
+
+    color: blue;
+}
+
+#mail:hover{
+
+    color: red;
+}
+
+#ins:hover{
+    color: blueviolet;
+}
+
+.flecha {
+
+    position: fixed;
+    margin-left: 95%;
+    margin-top: 35%;
+    z-index: 1;
+}
+
+.flecha a{
+
+    text-decoration: none;
+}
+
+.flecha i{
+    color: rgb(52, 157, 255);
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.flecha i:hover{
+
+    color: white;
+    transition: 0.5s;
+}
 
 
 
